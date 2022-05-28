@@ -1,0 +1,9 @@
+CSV Support Action Items #12 #13:
+    ☐ Change data format of the exported file to csv format
+    ☐ Allow option for csv export type in list view
+    ☐ Allow option for csv export type in tree view
+    ☐ Update allowed file types for import in list view
+    ☐ Update allowed file types for import in tree view
+    ☐ Implement data parsing for csv files
+    ☐ Implement identification of data type between ivenn and csv and parse accordingly
+    ☐ Update sample dataset to be in csv format
