@@ -35,6 +35,7 @@ var defaultGlobalOpacity = 0.2;
 var globalFontOpacity = 1;
 var globalDarker = 0.3;
 var firstLoad = true;
+var defaultExportFormat = '.csv';
 
 
   /**
@@ -74,7 +75,14 @@ function saveDataset() {
     // TODO: Remove deprecated reference updateFile2Save
     // updateFile2Save();
     updateFile2SaveCsv();
-    document_name = document.getElementById("dataset-name").value + ".ivenn";
+    debugger;
+    var chooser = document.getElementById("exportformat");
+    var choosen_type = chooser.value || defaultExportFormat;
+    let userInput = document.getElementById("dataset-name").value
+    if (!userInput && !userInput.trim()) {
+        userInput = choosen_type.slice(1,);
+    }
+    document_name = userInput + choosen_type;
     //alert("Saving dataset as "+document_name+". It may take some seconds.");
     dataset = document.getElementById("data_set_content").value;
     saveAs(new Blob([dataset], {type: "text/csv;charset=" + document.characterSet}), document_name);
