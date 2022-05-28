@@ -216,6 +216,13 @@ input {
 	border-radius: 4px;
 }
 
+select {
+	padding: 4px;
+	margin: 2px;
+	border: 1px solid #aaa;
+	border-radius: 4px;
+}
+
 input[type="file"] {
 	border: none;
 }
@@ -683,7 +690,20 @@ li:last-child .hentry, #content > .hentry {border: 0; margin: 0;}
 		padding-top: 3px; 
 		border-top: 1px solid #ddd;
 	}
-
+	#saveSetsInput form {
+		margin-left:5px;
+		display: flex;
+		align-items: baseline;
+		justify-content: center;
+	}
+	#saveSetsInput form input{
+		font-weight: normal;
+		margin: 8px 2px 2px 0;
+		flex: 1;
+	}
+	#saveSetsInput form select {
+		margin: 8px 0 2px 2px;
+	}
 	#loadSetsInput {
 		margin-top: 16px; 
 		margin-left: 11px; 

@@ -1,6 +1,6 @@
 CSV Support Action Items #12 #13:
-    ☐ Change data format of the exported file to csv format
-    ☐ Allow option for csv export type in list view
+    ✔ Change data format of the exported file to csv format @started(22-05-28 18:19) @done(22-05-28 19:37) @lasted(1h18m36s)
+    ☐ Allow option for csv export type in list view @started(22-05-28 19:38)
     ☐ Allow option for csv export type in tree view
     ☐ Update allowed file types for import in list view
     ☐ Update allowed file types for import in tree view

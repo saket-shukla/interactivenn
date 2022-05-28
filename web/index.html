@@ -256,7 +256,13 @@ http://www.interactivenn.net/
                             <button type="button" id="clearSets" class="danger" onclick="clearSets()">Clear sets</button>
 
                             <div id="saveSetsInput">
-                                <label><input type="text" class="filename" id="dataset-name" size="30" style="font-weight: normal; margin-left: 7px" placeholder="Write dataset name here"/>.ivenn</label>                        
+                                <form id="export-options">
+                                    <input type="text" class="filename" id="dataset-name" placeholder="Write dataset name here"/>
+                                    <select id="exportformat" name="exportformat" form="exportformat">
+                                        <option value=".csv" selected>.csv</option>
+                                        <option value=".ivenn">.ivenn</option>
+                                    </select>
+                                </form>                        
                             </div>
                             <button id="saveSets" class="success" value="Save" type="button" onclick="saveDataset()">Save Sets</button>
 
